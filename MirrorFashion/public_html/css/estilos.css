@@ -52,6 +52,14 @@ footer .container{
     color: #003366;
 }
 
+.menu-opcoes a:hover {
+    color: #007DC6;
+}
+
+.menu-opcoes a:active {
+    color: #867DC6;
+}
+
 .container {
     margin: 0 auto;
     width: 940px;
@@ -59,6 +67,11 @@ footer .container{
 
 .destaque {
     margin-top: 10px;
+}
+
+.busca {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .busca button {
@@ -74,7 +87,7 @@ footer .container{
 .menu-departamentos {
     float: left;
     background-color: #DCDCDC;
-    font-weight: bold;rgb(2, 2, 2)
+    font-weight: bold;
     text-transform: uppercase;
 
     margin-right: 10px;
@@ -99,6 +112,23 @@ footer .container{
     padding: 5px 10px;
 }
 
+.menu-departamentos li ul {
+    display: none;
+}
+
+.menu-departamentos li:hover ul {
+    display: block;
+}
+
+.menu-departamentos li ul li{
+    background-color: #DCDCDC;
+}
+
+.menu-departamentos li li a::before {
+    content: '\272A ';
+    padding-right: 3px;
+}
+
 .menu-departamentos a {
     color: #333333;
     text-decoration: none;
@@ -112,14 +142,23 @@ footer .container{
     margin: 10px 0;
     padding: 10px;
     width: 445px;
+
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
 }
 
 .painel h2 {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
-
+    text-shadow: 3px 3px 2px rgba(255,255,255,0.8);
     margin-bottom: 10px;
+}
+
+.painel h2::before {
+    content: '\2756';
+    padding-right: 5px;
+    opacity: 0.4;
 }
 
 .painel li {
@@ -141,11 +180,13 @@ footer .container{
 .novidades {
     float: left;
     background-color: #F5DCDC;
+    background: linear-gradient(#F5DCDC,#BEBEF4);
 }
 
 .mais-vendidos {
     float: right;
     background-color: #DCDCF5;
+    background: linear-gradient(#DCDCF5,#F4BEBE);
 }
 
 .social {
